@@ -10,6 +10,11 @@ namespace CApp
     {
         static void Main(string[] args)
         {
+            var student = new Student
+            {
+                FirstName = "Mohammed",
+                LastName = "Hussain"
+            };
         }
     }
 }
