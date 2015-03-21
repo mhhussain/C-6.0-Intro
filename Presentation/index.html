@@ -182,7 +182,37 @@
 				</section>
 				
 				<section>
-				
+					<section>
+						<h2>Expression bodied members</h2>
+					</section>
+					<section>
+						<h3>OG C#</h3>
+						<pre><code data-trim contenteditable>
+							public class Student
+{
+    public String FirstName { get; set; }
+    public String LastName { get; set; }
+    public String FullName
+    {
+        get
+        {
+            return String.Format("{0} {1}", FirstName, LastName);
+        }
+    }
+}
+						</code></pre>
+					</section>
+					<section>
+						<h3>C# 6.0</h3>
+						<pre><code data-trim contenteditable>
+							public class Student
+{
+    public String FirstName { get; set; }
+    public String LastName { get; set; }
+    public String FullName => String.Format("{0} {1}", FirstName, LastName);
+}
+						</code></pre>
+					</section>
 				</section>
 
 				<section>
