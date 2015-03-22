@@ -11,6 +11,8 @@ namespace CApp
                 FirstName = "Mohammed",
                 LastName = "Hussain"
             };
+
+            Console.WriteLine(student.FullName);
         }
     }
 }
