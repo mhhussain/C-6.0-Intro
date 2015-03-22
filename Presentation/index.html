@@ -216,7 +216,56 @@
 				</section>
 
 				<section>
-					
+					<section>
+						<h2>Static class inclusions</h2>
+					</section>
+					<section>
+						<h3>OG C#</h3>
+						<pre><code data-trim contenteditable>
+					using System;
+
+namespace CApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var student = new Student
+            {
+                FirstName = "Mohammed",
+                LastName = "Hussain"
+            };
+
+            Console.WriteLine(student.FullName);
+        }
+    }
+}
+						</code></pre>
+					</section>
+					<section>
+						<h3>C# 6.0</h3>
+						<pre><code data-trim contenteditable>
+					using System;
+using System.Console;
+
+namespace CApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var student = new Student
+            {
+                FirstName = "Mohammed",
+                LastName = "Hussain"
+            };
+
+            WriteLine(student.FullName);
+        }
+    }
+}
+						</code></pre>
+					</section>					
 				</section>
 
 				<section>
