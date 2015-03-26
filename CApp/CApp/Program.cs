@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Console;
 
 namespace CApp
 {
@@ -11,6 +12,8 @@ namespace CApp
                 FirstName = "Mohammed",
                 LastName = "Hussain"
             };
+
+            WriteLine(student.FullName);
         }
     }
 }
