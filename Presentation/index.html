@@ -377,16 +377,32 @@ catch (Exception)
 					<section>
 						<h3>OG C#</h3>
 						<pre><code data-trim contenteditable>
+						if (school != null)
+{
+    if (school.Student != null)
+    {
+        if (school.Student.Course != null)
+        {
+            if (school.Student.Course.Teacher != null)
+            {
+                WriteLine(school.Student.Course.Teacher.Name);
+            }
+        }
+    }
+}
 						</code></pre>
 					</section>
 					<section>
 						<h3>C# 6.0</h3>
 						<pre><code data-trim contenteditable>
+WriteLine(school?.Student?.Course?.Teacher?.Name);
 						</code></pre>
 					</section>
 				</section>
 				
-				
+				<section data-background="images/lifeoncode.jpg">
+					<!--<img src="images/life on code.jpg" />-->
+				</section>
 				
 				
 			</div>
