@@ -12,7 +12,6 @@ namespace CApp
         {
             Thread.Sleep(500);
             throw new TimeoutException("Oh crap the cops, run!!!!");
-            return 0;
         }
     }
 }
