@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Console;
 
 namespace CApp
 {
@@ -6,11 +7,23 @@ namespace CApp
     {
         static void Main(string[] args)
         {
-            var student = new Student
+            var school = new School();
+
+            if (school != null)
             {
-                FirstName = "Mohammed",
-                LastName = "Hussain"
-            };
+                if (school.Student != null)
+                {
+                    if (school.Student.Course != null)
+                    {
+                        if (school.Student.Course.Teacher != null)
+                        {
+                            WriteLine(school.Student.Course.Teacher.Name);
+                        }
+                    }
+                }
+            }
+
+            WriteLine(school?.Student?.Course?.Teacher?.Name);
         }
     }
 }
