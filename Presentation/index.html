@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
 		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.scss">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -346,6 +346,47 @@ students.Add(102, new Student { FirstName = "Pikachu" });
 						</code></pre>
 					</section>
 				</section>
+				
+				<section>
+					<section>
+						<h2>Exception Filters</h2>
+					</section>
+					<section>
+						<h3>C# 6.0</h3>
+						<pre><code data-trim contenteditable>
+						try
+{
+    student.GetAllStudents();
+}
+catch (TimeoutException) if (failures++ < 10)
+{
+    WriteLine("You've earned a timeout.");
+}
+catch (Exception)
+{
+    return;
+}
+						</code></pre>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Null conditional</h2>
+					</section>
+					<section>
+						<h3>OG C#</h3>
+						<pre><code data-trim contenteditable>
+						</code></pre>
+					</section>
+					<section>
+						<h3>C# 6.0</h3>
+						<pre><code data-trim contenteditable>
+						</code></pre>
+					</section>
+				</section>
+				
+				
 				
 				
 			</div>
