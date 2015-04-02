@@ -22,8 +22,6 @@ namespace CApp
                     }
                 }
             }
-
-            WriteLine(school?.Student?.Course?.Teacher?.Name);
         }
     }
 }
